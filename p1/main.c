@@ -1,5 +1,4 @@
 
-
 #include <stdio.h>
 
 int main(void)
@@ -8,7 +7,7 @@ int main(void)
     char ch[10];
     char *p = nullptr;
     char *q = nullptr;
-    int count = 0;
+
     int maxCount = 0;
     char result;
     
@@ -17,6 +16,8 @@ int main(void)
     }
     
     for(p = ch; p < ch+10; p++){
+        int count = 0;
+
         for(q = ch; q < ch+10; q++){
             if(*p == *q){
                 count++;
@@ -27,7 +28,6 @@ int main(void)
             maxCount = count;
             result = *p;
         }
-        
     }
     
     printf("%c %d",result,maxCount);
