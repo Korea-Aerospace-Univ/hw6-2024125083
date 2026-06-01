@@ -4,12 +4,12 @@
 int main(void)
 {
     
-    char ch[10];
+    char ch[10]= {};
     char *p = nullptr;
     char *q = nullptr;
 
     int maxCount = 0;
-    char result;
+    char result = '\0';
     
     for (p = ch; p< ch+10; p++){
         scanf("%c",p);
